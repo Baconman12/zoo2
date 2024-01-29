@@ -27,7 +27,7 @@ public class App
                      zoo.addanimal();
                      break;
                     case 2:
-                    System.out.println(zooname+" pitää sisällään seuraavat eläimet:");
+                     System.out.println(zooname+" pitää sisällään seuraavat eläimet:");
                      zoo.listanimals();
                      break;
                     case 3:
