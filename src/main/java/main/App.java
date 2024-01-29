@@ -23,14 +23,22 @@ public class App
 
                 switch(i){
                     case 1:
-                     zoo.addanimal();
+                     System.out.println("Mikä laji?");
+                     String specie = sc.nextLine();
+                     System.out.println("Anna eläimen nimi:");
+                     String name = sc.nextLine();
+                     System.out.println("Anna eläimen ikä:");
+                     int age = Integer.parseInt(sc.nextLine());
+                     zoo.addanimal(specie, name, age);
                      break;
                     case 2:
                      System.out.println(zooname+" pitää sisällään seuraavat eläimet:");
                      zoo.listanimals();
                      break;
                     case 3:
-                    zoo.running();
+                     System.out.println("Kuinka monta kierrosta?");
+                     int laps = Integer.parseInt(sc.nextLine());
+                     zoo.running(laps);
                      break;
                     case 0:
                      System.out.println("Kiitos ohjelman käytöstä.");
