@@ -7,7 +7,7 @@ public class Zoo {
 
     Scanner sc = new Scanner(System.in);
     Animal animal = new Animal();
-    public ArrayList<Animal> animals = new ArrayList<>();
+    private ArrayList<Animal> animals = new ArrayList<>();
 
     public void addanimal(){
         System.out.println("Mikä laji?");
